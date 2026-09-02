@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pembuat website syarif putra aditiya | Website Resmi desa MENSERE BAWAH |pembuat website :syarif puta aditiya |kelas: xi rpl 2</title>
+<meta name="description" content="Website profil desa MENSERE BAWAH - mengenal sejarah, data, kegiatan, potensi, dan budaya kampung kami.">
+
+<!-- Google Fonts: Fraunces (judul, karakter hangat) + Plus Jakarta Sans (teks) + JetBrains Mono (data/angka) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome untuk ikon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== LOADER ==================== -->
+<div id="page-loader" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 100 100" width="56" height="56">
+      <path id="loader-path" d="M10,70 Q30,50 50,70 T90,70" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ==================== TOMBOL KEMBALI KE ATAS ==================== -->
+<button id="backToTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ==================== NAVBAR ==================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#beranda" class="navbar__brand">
+      <span class="navbar__logo" aria-hidden="true">
+        <!-- logo sederhana berbentuk gunung + sawah, dibuat murni CSS/SVG, bukan tiruan logo instansi -->
+        <svg viewBox="0 0 48 48" width="34" height="34">
+          <polygon points="24,6 40,34 8,34" fill="#3E6B45"/>
+          <polygon points="24,16 33,34 15,34" fill="#8FB573"/>
+          <rect x="6" y="34" width="36" height="4" rx="2" fill="#B98650"/>
+        </svg>
+      </span>
+      <span class="navbar__title">desa <strong>mensere</strong></span>
+    </a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar__menu" id="navMenu">
+      <ul>
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#profil" class="nav-link">Profil</a></li>
+        <li><a href="#data-kampung" class="nav-link">Data Kampung</a></li>
+        <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+        <li><a href="#potensi" class="nav-link">Potensi</a></li>
+        <li><a href="#galeri" class="nav-link">Galeri</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ==================== HERO / BERANDA ==================== -->
+<section id="beranda" class="hero">
+  <div class="hero__bg" style="background-image:url('images/hero.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__contour" aria-hidden="true"></div>
+
+  <div class="hero__content container reveal">
+    <p class="eyebrow">Selamat datang di laman digital kami</p>
+    <h1>SELAMAT DATANG DI<br>DESA KAMI MENSERE</h1>
+    <p class="hero__subtitle">
+      Mengenal lebih dekat kampung halaman, kehidupan masyarakat, budaya, kegiatan,
+      dan potensi yang kami miliki.
+    </p>
+    <div class="hero__actions">
+      <a href="#profil" class="btn btn--primary">
+        <i class="fa-solid fa-compass"></i> Jelajahi Kampung
+      </a>
+      <a href="#galeri" class="btn btn--ghost">
+        <i class="fa-solid fa-images"></i> Lihat Galeri
+      </a>
+    </div>
+  </div>
+
+  <a href="#sekilas" class="hero__scroll" aria-label="Gulir ke bawah">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ==================== SEKILAS TENTANG KAMPUNG ==================== -->
+<section id="sekilas" class="section section--cream">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Identitas Kampung</p>
+      <h2>Sekilas Tentang Kampung</h2>
+      <p class="section__desc">Data administratif singkat mengenai wilayah kami.</p>
+    </div>
+
+    <div class="info-grid reveal">
+      <div class="info-card">
+        <i class="fa-solid fa-house-flag"></i>
+        <span class="info-card__label">Nama desa</span>
+        <span class="info-card__value">menserebawah</span>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-building-columns"></i>
+        <span class="info-card__label">Kecamatan</span>
+        <span class="info-card__value">tebas</span>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-city"></i>
+        <span class="info-card__label">Kabupaten</span>
+        <span class="info-card__value">sambas</span>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-map"></i>
+        <span class="info-card__label">Provinsi</span>
+        <span class="info-card__value">kalimantan barat</span>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-ruler-combined"></i>
+        <span class="info-card__label">Luas Wilayah</span>
+        <span class="info-card__value">12,4 km&sup2;</span>
+      </div>
+      <div class="info-card">
+        <i class="fa-solid fa-users"></i>
+        <span class="info-card__label">Jumlah Penduduk</span>
+        <span class="info-card__value">3.482 Jiwa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROFIL KAMPUNG ==================== -->
+<section id="profil" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Mengenal Kami</p>
+      <h2>Profil Kampung</h2>
+      <p class="section__desc">Sejarah, arah pandang, dan keseharian masyarakat kampung kami.</p>
+    </div>
+
+    <div class="profile-row reveal">
+      <div class="profile-row__media">
+        <img src="gotong royong.jpg" alt="Suasana desa mensere">
+      </div>
+      <div class="profile-row__text">
+        <h3><i class="fa-solid fa-scroll"></i> Sejarah Kampung</h3>
+        <p>
+          desa mensere berdiri sejak tahun 1952, dirintis oleh sekelompok keluarga petani
+          yang membuka lahan di lembah subur ini. Nama "mensere bawah" dipilih sebagai doa dan harapan
+          agar kampung terus tumbuh, maju, dan sejahtera dari generasi ke generasi. Hingga kini,
+          nilai gotong royong yang diwariskan para pendiri kampung masih menjadi pegangan hidup
+          bersama warga.
+        </p>
+      </div>
+    </div>
+
+    <div class="profile-row profile-row--reverse reveal">
+      <div class="profile-row__media">
+        <img src="desamensere bawah nibos.jfif" alt="Kehidupan masyarakat desa mensere">
+      </div>
+      <div class="profile-row__text">
+        <h3><i class="fa-solid fa-seedling"></i> Kondisi Lingkungan &amp; Kehidupan Masyarakat</h3>
+        <p>
+          Secara historis, penamaan wilayah "Mensere Bawah" merujuk pada area pemukiman yang posisinya berada di bagian hilir atau area yang lebih dekat dengan aliran sungai/akses transportasi utama pada masa lampau, jika dibandingkan dengan wilayah Mensere Atas yang berada di daratan lebih tinggi.
+        </p>
+      </div>
+    </div>
+
+    <div class="vm-grid reveal">
+      <div class="vm-card">
+        <div class="vm-card__icon"><i class="fa-solid fa-eye"></i></div>
+        <h3>Visi</h3>
+        <p>Mewujudkan desa mensere yang mandiri, guyub, asri, dan sejahtera berlandaskan
+          gotong royong serta pelestarian budaya lokal.</p>
+      </div>
+      <div class="vm-card">
+        <div class="vm-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Misi</h3>
+        <ul>
+          <li>Meningkatkan kesejahteraan melalui pemberdayaan pertanian dan UMKM.</li>
+          <li>Menjaga kelestarian lingkungan dan kearifan lokal.</li>
+          <li>Mempererat kebersamaan lewat kegiatan sosial dan budaya.</li>
+          <li>Meningkatkan kualitas pelayanan bagi seluruh warga.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DATA KAMPUNG (STATISTIK COUNTER) ==================== -->
+<section id="data-kampung" class="section section--dark">
+  <div class="section__contour section__contour--top" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Data &amp; Statistik</p>
+      <h2 class="text-white">Data Kampung</h2>
+      <p class="section__desc section__desc--light">Gambaran jumlah penduduk dan wilayah administratif kampung.</p>
+    </div>
+
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <i class="fa-solid fa-people-group"></i>
+        <span class="stat-card__number" data-target="3482">0</span>
+        <span class="stat-card__label">Jumlah Penduduk</span>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span class="stat-card__number" data-target="874">0</span>
+        <span class="stat-card__label">Kepala Keluarga</span>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-layer-group"></i>
+        <span class="stat-card__number" data-target="9">0</span>
+        <span class="stat-card__label">Jumlah RT</span>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span class="stat-card__number" data-target="4">0</span>
+        <span class="stat-card__label">Jumlah Dusun</span>
+      </div>
+    </div>
+  </div>
+  <div class="section__contour section__contour--bottom" aria-hidden="true"></div>
+</section>
+
+<!-- ==================== KEGIATAN KAMPUNG ==================== -->
+<section id="kegiatan" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Bersama &amp; Bergotong Royong</p>
+      <h2>Kegiatan Kampung</h2>
+      <p class="section__desc">Beragam kegiatan rutin yang menghidupkan kebersamaan warga.</p>
+    </div>
+
+    <div class="card-grid reveal">
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-1.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-hands-holding-circle"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Gotong Royong</h3>
+          <p>Kegiatan rutin membersihkan fasilitas umum dan lingkungan yang dilakukan bersama seluruh warga.</p>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-1.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-broom"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Kerja Bakti</h3>
+          <p>Perbaikan jalan, saluran air, dan fasilitas kampung dilakukan secara swadaya oleh warga.</p>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-2.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-futbol"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Kegiatan Olahraga</h3>
+          <p>Pertandingan voli, sepak bola, dan senam bersama rutin diadakan setiap akhir pekan.</p>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-3.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-mosque"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Kegiatan Keagamaan</h3>
+          <p>Pengajian, kebaktian, dan peringatan hari besar keagamaan rutin diselenggarakan di kampung.</p>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-2.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-people-roof"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Acara Masyarakat</h3>
+          <p>Perayaan hari kemerdekaan, syukuran panen, dan acara adat digelar meriah setiap tahun.</p>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <div class="activity-card__img" style="background-image:url('images/kegiatan-3.jpg');">
+          <span class="activity-card__icon"><i class="fa-solid fa-drum"></i></span>
+        </div>
+        <div class="activity-card__body">
+          <h3>Kegiatan Pemuda</h3>
+          <p>Karang taruna aktif mengadakan pelatihan, olahraga, dan kegiatan sosial bagi generasi muda.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== POTENSI KAMPUNG ==================== -->
+<section id="potensi" class="section section--cream">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Sumber Daya</p>
+      <h2>Potensi Kampung</h2>
+      <p class="section__desc">Sektor unggulan yang menjadi tulang punggung ekonomi warga.</p>
+    </div>
+
+    <div class="potensi-grid reveal">
+      <div class="potensi-card">
+        <i class="fa-solid fa-wheat-awn"></i>
+        <h3>Pertanian</h3>
+        <p>Padi, jagung, dan palawija menjadi hasil utama sawah dan ladang warga.</p>
+      </div>
+      <div class="potensi-card">
+        <i class="fa-solid fa-tree"></i>
+        <h3>Perkebunan</h3>
+        <p>Kebun jeruk , dan buah-buahan dikelola turun-temurun oleh warga.</p>
+      </div>
+      <div class="potensi-card">
+        <i class="fa-solid fa-cow"></i>
+        <h3>Peternakan</h3>
+        <p>Ternak sapi, kambing, dan unggas menjadi sumber penghasilan tambahan.</p>
+      </div>
+      <div class="potensi-card">
+        <i class="fa-solid fa-fish"></i>
+        <h3>Perikanan</h3>
+        <p>Kolam ikan air tawar dikembangkan warga di sepanjang aliran sungai kampung.</p>
+      </div>
+      <div class="potensi-card">
+        <i class="fa-solid fa-store"></i>
+        <h3>UMKM</h3>
+        <p>Warung, kerajinan tangan, dan usaha rumahan tumbuh subur di kampung.</p>
+      </div>
+      <div class="potensi-card">
+        <i class="fa-solid fa-jar"></i>
+        <h3>Produk Lokal</h3>
+        <p>Keripik singkong, gula aren, dan anyaman bambu menjadi produk khas kampung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BUDAYA DAN TRADISI ==================== -->
+<section id="budaya" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Warisan Leluhur</p>
+      <h2>Budaya dan Tradisi</h2>
+      <p class="section__desc">Kekayaan adat yang terus dijaga dan diwariskan.</p>
+    </div>
+
+    <div class="budaya-grid reveal">
+      <div class="budaya-card">
+        <i class="fa-solid fa-hands-praying"></i>
+        <h3>Adat Istiadat</h3>
+        <p>Musyawarah adat dan upacara siklus hidup masih dijalankan sesuai kebiasaan leluhur.</p>
+      </div>
+      <div class="budaya-card">
+        <i class="fa-solid fa-fire"></i>
+        <h3>Tradisi Masyarakat</h3>
+        <p>Selamatan panen dan bersih kampung digelar setiap tahun sebagai wujud syukur.</p>
+      </div>
+      <div class="budaya-card">
+        <i class="fa-solid fa-bowl-food"></i>
+        <h3>Makanan Khas</h3>
+        <p>bubur pedas, gudeg kampung, dan wedang jahe menjadi hidangan khas yang selalu dirindukan.</p>
+      </div>
+      <div class="budaya-card">
+        <i class="fa-solid fa-masks-theater"></i>
+        <h3>Kesenian</h3>
+        <p>Kesenian kuda lumping dan gamelan rutin tampil dalam setiap perayaan kampung.</p>
+      </div>
+      <div class="budaya-card">
+        <i class="fa-solid fa-child-reaching"></i>
+        <h3>Permainan Tradisional</h3>
+        <p>Egrang, gobak sodor, dan kelereng  masih dimainkan anak-anak kampung hingga kini.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TENTANG DESA MENSERE  ==================== -->
+<section id="tempat" class="section section--cream">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Sudut Kampung</p>
+      <h2>TENTANG DESA MENSERE</h2>
+      <p class="section__desc">Lokasi-lokasi yang menjadi kebanggaan yang ada di desa mensere.</p>
+    </div>
+
+    <div class="card-grid reveal">
+      <article class="place-card">
+        <img src="perkebunan.jfif" alt="kebun desa mensere" width="400" height="400">
+        <div class="place-card__body">
+          <h3><i class="fa-solid fa-water"></i> perkebunan</h3>
+          <p>ini adalah perkebunan yang ada di desa mensere .</p>
+        </div>
+      </article>
+      <article class="place-card">
+        <img src="lomba lapangan bola mensere.jfif" alt="Lapangan sepakbola desa MENSERE">
+        <div class="place-card__body">
+          <h3><i class="fa-solid fa-futbol"></i> Lapangan Kampung</h3>
+          <p>Pusat kegiatan olahraga dan acara besar kampung, dari lomba 17 Agustus hingga pasar malam.</p>
+        </div>
+      </article>
+      <article class="place-card">
+        <img src="kepala desa.jfif" alt="kepala desa mensere">
+        <div class="place-card__body">
+          <h3><i class="fa-solid fa-wheat-awn"></i>kepala desa mensere</h3>
+          <p>bapak kasmir anwar atau biasa di panggil kemer adalah kepala desa mensere.</p>
+        </div>
+      </article>
+      <article class="place-card">
+        <img src="aditjak.jfif" alt="pembuat web desa mensere" width="100" height="150">
+        <div class="place-card__body"> 
+          <h3><i class="fa-solid fa-leaf"></i> pembuat progam atau web</h3>
+          <p>nama saya syarif putra aditiya saya pembuat website ini.</p>
+        </div>
+      </article>
+      <article class="place-card">
+        <img src="Kantor_Desa_Mensere,_Sambas.jpg" alt="Balai desa mensere">
+        <div class="place-card__body">
+          <h3><i class="fa-solid fa-people-roof"></i> Balai desa mensere</h3>
+          <p>Tempat berkumpul warga untuk musyawarah, pengajian, dan berbagai pertemuan rutin.</p>
+        </div>
+      </article>
+      <article class="place-card">
+        <img src="mts at taqwa.jfif" alt="mts at taqwa mensere">
+        <div class="place-card__body">
+          <h3><i class="fa-solid fa-shield-halved"></i> mts at taqwa mensere</h3>
+          <p>mts at taqwa adalah asal sekolah saya .</p>
+        </div>
+      </article>
+    </div>
+</section>
+
+<!-- ==================== GALERI ==================== -->
+<section id="galeri" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Dokumentasi</p>
+      <h2>Galeri Kampung</h2>
+      <p class="section__desc">Kumpulan momen dan suasana kampung dari waktu ke waktu. Klik foto untuk memperbesar.</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <button class="gallery-item" data-caption="Hamparan sawah desa mensere"><img src="sunset mensere.jfif" alt="Galeri hamparan sawah" loading="lazy"></button>
+      <button class="gallery-item" data-caption="Kesenian tradisional kampung"><img src="dayak.jfif" alt="Galeri kesenian tradisional yang ada di kalimantan barat" loading="lazy"></button>
+      <button class="gallery-item" data-caption="sd yang ada di mensere sdn34 mensere"><img src="sdn 34 mensere.jfif" alt="sdn 34 mensere" loading="lazy"></button>
+      <button class="gallery-item" data-caption="Panen raya bersama warga"><img src="padi mensere.png" alt="Galeri panen raya" loading="lazy"></button>
+      <button class="gallery-item" data-caption="Pertandingan olahraga antar RT"><img src="panjatpinang.jfif" alt="Galeri kegiatan olahraga" loading="lazy"></button>
+      <button class="gallery-item" data-caption="Balai desa mensere saat pertemuan warga"><img src="Kantor_Desa_Mensere,_Sambas.jpg" alt="Galeri balai kampung" loading="lazy"></button>
+      <button class="gallery-item" data-caption="Senja di desa mensere"><img src="suasana.jfif" alt="Galeri senja kampung" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LIGHTBOX / MODAL GALERI ==================== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Foto sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+  <div class="lightbox__content">
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Foto berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ==================== KEGIATAN TERBARU (BERITA) ==================== -->
+<section id="berita" class="section section--cream">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Kabar desa mensere</p>
+      <h2>Kegiatan Terbaru</h2>
+      <p class="section__desc">Rangkuman kegiatan dan peristiwa terbaru di desa kami mensere.</p>
+    </div>
+
+    <div class="news-grid reveal">
+      <article class="news-card">
+        <img src="bersih.jfif" alt="Berita kegiatan bersih-bersih di desa mensere">
+        <div class="news-card__body">
+          <span class="news-card__date"><i class="fa-regular fa-calendar"></i> 12 Agustus 2026</span>
+          <h3>Bersih Kampung Sambut Perayaan Kemerdekaan</h3>
+          <p>Warga bersama-sama membersihkan jalan dan fasilitas umum menjelang peringatan HUT RI di lapangan kampung.</p>
+          <a href="#" class="news-card__link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="padi mensere.png" alt="Berita panen raya">
+        <div class="news-card__body">
+          <span class="news-card__date"><i class="fa-regular fa-calendar"></i> 28 Juli 2026</span>
+          <h3>Panen Raya Padi Diwarnai Syukuran Warga</h3>
+          <p>Musim panen tahun ini membawa hasil melimpah, warga menggelar syukuran bersama di balai kampung.</p>
+          <a href="#" class="news-card__link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="berita terkini.jfif" alt="Berita pelatihan pemuda">
+        <div class="news-card__body">
+          <span class="news-card__date"><i class="fa-regular fa-calendar"></i> 15 Juli 2026</span>
+          <h3>Karang Taruna Adakan Pelatihan Kerajinan Bambu</h3>
+          <p>Pemuda kampung mengikuti pelatihan anyaman bambu untuk mengembangkan produk UMKM lokal.</p>
+          <a href="#" class="news-card__link">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PETA LOKASI ==================== -->
+<section id="peta" class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Temukan Kami</p>
+      <h2>Peta Lokasi</h2>
+      <p class="section__desc">Silakan ganti URL iframe di bawah dengan tautan Google Maps kampung Anda.</p>
+    </div>
+
+    <div class="map-wrap reveal">
+      <!--
+        CARA MENGGANTI PETA:
+        1. Buka Google Maps, cari lokasi kampung Anda.
+        2. Klik "Bagikan" > "Sematkan peta" (Embed a map).
+        3. Salin URL di dalam atribut src iframe, lalu tempel menggantikan URL di bawah ini.
+        Tidak diperlukan API Key untuk cara ini.
+      -->
+      <iframe
+        src="https://maps.app.goo.gl/Av8rcrtHA3RE4z1S7"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Peta Lokasi desa mensere">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== KONTAK ==================== -->
+<section id="kontak" class="section section--dark">
+  <div class="section__contour section__contour--top" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Hubungi Kami</p>
+      <h2 class="text-white">Kontak</h2>
+      <p class="section__desc section__desc--light">Kami senang mendengar pertanyaan, masukan, atau kunjungan dari Anda.</p>
+    </div>
+
+    <div class="kontak-grid reveal">
+      <div class="kontak-info">
+        <ul>
+          <li><i class="fa-solid fa-house"></i>
+            <div><strong>desa mensere</strong><span>Kec. tebas, Kab. sambas, mensere bawah</span></div>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i>
+            <div><strong>Email</strong><span>desa mensere bawah@example.id</span></div>
+          </li>
+          <li><i class="fa-solid fa-phone"></i>
+            <div><strong>Nomor Kontak</strong><span>(0281) 123-4567</span></div>
+          </li>
+          <li><i class="fa-regular fa-clock"></i>
+            <div><strong>Jam Pelayanan</strong><span>Senin - Jumat, 08.00 - 15.00 WIB</span></div>
+          </li>
+        </ul>
+
+        <!-- Ganti nomor 6281234567890 dengan nomor WhatsApp kampung Anda (format: kode negara tanpa tanda +) -->
+        <a href="https://wa.me/6281234567890?text=Halo%20Kampung%20Sukamaju%2C%20saya%20ingin%20bertanya"
+           target="_blank" rel="noopener" class="btn btn--whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+        </a>
+      </div>
+
+      <form class="kontak-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap Anda">
+          <span class="form-error" id="err-nama"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com">
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+          <span class="form-error" id="err-pesan"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+        </button>
+        <p class="form-success" id="formSuccess">Terima kasih! Pesan Anda telah tervalidasi (demo statis, belum terhubung ke server).</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer__contour" aria-hidden="true"></div>
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="navbar__logo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34">
+          <polygon points="24,6 40,34 8,34" fill="#8FB573"/>
+          <polygon points="24,16 33,34 15,34" fill="#F5F1E6"/>
+          <rect x="6" y="34" width="36" height="4" rx="2" fill="#C9A227"/>
+        </svg>
+      </span>
+      <h3>desa mensere</h3>
+      <p>Website resmi profil kampung kami — mengenalkan sejarah, kehidupan, budaya, dan potensi
+        dea mensere kepada dunia luar.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#data-kampung">Data Kampung</a></li>
+        <li><a href="#kegiatan">Kegiatan</a></li>
+        <li><a href="#potensi">Potensi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Kontak</h4>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> Kec. tebas, Kab. sambas</li>
+        <li><i class="fa-solid fa-envelope"></i> desa mensere@example.id</li>
+        <li><i class="fa-solid fa-phone"></i> (0281) 123-4567</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="currentYear"></span> desa mensere. Website Kampung Halaman - Tugas Sekolah.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
