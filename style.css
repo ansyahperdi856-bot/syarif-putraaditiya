@@ -5,13 +5,13 @@
 
 :root {
   /* --- Palet warna (token desain) --- */
-  --hijau-tua: #78ec0a;      /* hijau hutan / bayangan pohon */
+  --hijau-tua: #751439;      /* hijau hutan / bayangan pohon */
   --hijau-daun: #d1355c;     /* hijau sawah & dedaunan */
   --hijau-lembut: #dd0025;   /* aksen terang */
   --krem: #bb0785;           /* warna dasar terang, seperti jerami */
   --putih: #b83ad1af;
   --cokelat: #fa134d;        /* tanah / bambu */
-  --cokelat-tua: #c9f507;
+  --cokelat-tua: #29277a;
   --emas-padi: #e60a83;      /* aksen kecil, padi menguning */
   --teks-gelap: #520ca1;
   --teks-muted: #0fdf8f;
